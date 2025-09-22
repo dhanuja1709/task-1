@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickBite - Food Delivery</title>
+<link rel="stylesheet" href="task1.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="brand">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDdlAexQfQ13M7__3a8u1LovloskBdrGFURQx2K1df6ij9-kerjl3LsKAj15RXdp6JKmc&usqp=CAU" alt="QuickBite Logo">
+    <span>QuickBite</span>
+  </div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#home" onclick="showSection('home')">Home</a></li>
+      <li><a href="#menu" onclick="showSection('menu')">Menu</a></li>
+      <li><a href="#how" onclick="showSection('how')">How It Works</a></li>
+      <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="nav-cta" onclick="showSection('menu')">Order Now</button>
+  <button class="hamburger" onclick="toggleMobileNav()">☰</button>
+</header>
+
+<div id="mobileNav" class="mobile-nav">
+  <a href="#home" onclick="showSection('home'); toggleMobileNav()">Home</a>
+  <a href="#menu" onclick="showSection('menu'); toggleMobileNav()">Menu</a>
+  <a href="#how" onclick="showSection('how'); toggleMobileNav()">How It Works</a>
+  <a href="#contact" onclick="showSection('contact'); toggleMobileNav()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="home" class="section home active">
+  <div class="hero">
+    <h1>Delicious Food Delivered Fast</h1>
+    <p>Fresh meals from local favorites and chef specials</p>
+    <button onclick="showSection('menu')">Explore Menu</button>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="section menu" style="display:none">
+  <div class="container">
+    <h2>Our Popular Dishes</h2>
+    <div class="menu-grid">
+
+
+
+      <!-- Dish 1 -->
+      <div class="card">
+        <img src= "https://uk.ooni.com/cdn/shop/articles/20220211142645-margherita-9920_e41233d5-dcec-461c-b07e-03245f031dfe.jpg?v=1737105431" alt="Margherita Pizza">
+        <h3>Margherita Pizza</h3>
+        <p>Stone-baked base with tomato, basil & mozzarella</p>
+        <div class="card-meta">
+          <span>₹299</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+
+      <!-- Dish 2 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=70" alt="Smash Burger">
+        <h3>Smash Burger</h3>
+        <p>Chargrilled patty with cheese, pickles & sauce</p>
+        <div class="card-meta">
+          <span>₹249</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+
+      <!-- Dish 3 -->
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGGZs8VnVeUQg9JiQLO1z4aqtMguwbzuH4Q&s" alt="Creamy Alfredo">
+        <h3>Creamy Alfredo</h3>
+        <p>Fettuccine pasta tossed in parmesan cream sauce</p>
+        <div class="card-meta">
+          <span>₹279</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+
+      <!-- Dish 4 -->
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_FVFmS5g6RBXn6dLLwt0-UuH05doAoOW0qA&s" alt="Chocolate Lava Cake">
+        <h3>Chocolate Lava Cake</h3>
+        <p>Molten chocolate center, served warm with ice cream</p>
+        <div class="card-meta">
+          <span>₹149</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+
+      <!-- Dish 5 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=70" alt="Caesar Salad">
+        <h3>Caesar Salad</h3>
+        <p>Fresh romaine lettuce with parmesan, croutons & dressing</p>
+        <div class="card-meta">
+          <span>₹199</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+
+      <!-- Dish 6 -->
+      <div class="card">
+        <img src="https://www.sushijunction.com/cdn/shop/files/PremiumPartyPlatter-Veg.jpg?v=1734335753" alt="Sushi Platter">
+        <h3>Sushi Platter</h3>
+        <p>Assorted fresh sushi with soy sauce and wasabi</p>
+        <div class="card-meta">
+          <span>₹499</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+
+      <!-- Dish 7 -->
+      <div class="card">
+        <img src="https://thewoksoflife.com/wp-content/uploads/2016/07/grilled-tandoori-chicken-12.jpg" alt="Grilled Chicken">
+        <h3>Grilled Chicken</h3>
+        <p>Juicy grilled chicken served with steamed vegetables</p>
+        <div class="card-meta">
+          <span>₹349</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+
+      <!-- Dish 8 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=70" alt="Vegan Bowl">
+        <h3>Vegan Bowl</h3>
+        <p>Quinoa, avocado, roasted vegetables and tahini dressing</p>
+        <div class="card-meta">
+          <span>₹279</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+<section id="how" class="section how" style="display:none">
+  <div class="container">
+    <h2>How QuickBite Works</h2>
+    <div class="how-grid">
+
+      <!-- Step 1 -->
+      <div class="how-card">
+        <h3>1️⃣ Browse Menu</h3>
+        <p>Explore a wide range of delicious Tamil dishes like Biryani, Dosa, Idli & more.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="how-card">
+        <h3>2️⃣ Place Your Order</h3>
+        <p>Select your favorite dishes, quantity, and add any special instructions.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="how-card">
+        <h3>3️⃣ Order Sent to Kitchen</h3>
+        <p>Your order goes directly to our kitchen where chefs prepare your meal fresh.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="how-card">
+        <h3>4️⃣ Fast Delivery</h3>
+        <p>Our delivery team brings your meal right to your doorstep quickly & safely.</p>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="how-card">
+        <h3>5️⃣ Enjoy & Share</h3>
+        <p>Savor the authentic flavors and share your experience with friends & family.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact" style="display:none">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form onsubmit="event.preventDefault(); alert('Thanks! We will contact you soon.')">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 QuickBite</p>
+    <a href="https://instagram.com/yourfoodpage" target="_blank">Instagram</a>
+  </div>
+</footer>
+
+<script>
+function showSection(id){
+  document.querySelectorAll('.section').forEach(s=>s.style.display='none');
+  document.getElementById(id).style.display='block';
+}
+function toggleMobileNav(){
+  const nav=document.getElementById('mobileNav');
+  nav.style.display=(nav.style.display==='flex')?'none':'flex';
+}
+
+
+const orderButtons = document.querySelectorAll('.order-btn');
+const modal = document.getElementById('orderModal');
+const modalDish = document.getElementById('modalDish');
+const modalPrice = document.getElementById('modalPrice');
+const orderForm = document.getElementById('orderForm');
+
+orderButtons.forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const card = btn.closest('.card');
+    const name = card.dataset.name;
+    const price = card.dataset.price;
+    modalDish.textContent = "Order: " + name;
+    modalPrice.textContent = "Price: ₹" + price;
+    modal.setAttribute('aria-hidden','false');
+  });
+});
+
+function closeOrderModal(){
+  modal.setAttribute('aria-hidden','true');
+}
+
+function submitOrder(e){
+  e.preventDefault();
+  alert("✅ Success! Your order has been placed.");
+  orderForm.reset();
+  closeOrderModal();
+}
+
+</script>
+</body>
+</html>
